@@ -1,23 +1,27 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Impresora {
 
-    private ArrayList listaImprimibles;
+
+   private List<Imprimible> listaImprimibles;
+
+   public Impresora(){
+       listaImprimibles = new ArrayList<>();
+
+   }
+
 
     public void imprirTodo(){
-        //TODO
         for (Imprimible unImprimible : listaImprimibles){
-            listaImprimibles.imprimir;
-
+            unImprimible.imprimir();
         }
-
     }
 
     public void agregarImprimible (Imprimible unImprimible){
-
-
+        this.listaImprimibles.add(unImprimible);
 
     }
 
